@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBT.Test", "SBT.Test\SBT.Test.csproj", "{CA73C390-DD56-4FC8-A3D4-41BBE123EF99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RST.Command", "RST.Command\RST.Command.csproj", "{5EC6058A-8134-47B0-8EE0-F946FC7D5847}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA73C390-DD56-4FC8-A3D4-41BBE123EF99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA73C390-DD56-4FC8-A3D4-41BBE123EF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA73C390-DD56-4FC8-A3D4-41BBE123EF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA73C390-DD56-4FC8-A3D4-41BBE123EF99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EC6058A-8134-47B0-8EE0-F946FC7D5847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EC6058A-8134-47B0-8EE0-F946FC7D5847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EC6058A-8134-47B0-8EE0-F946FC7D5847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EC6058A-8134-47B0-8EE0-F946FC7D5847}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15B94755-140C-4C64-BD82-EF1D5C8B96F3}
+	EndGlobalSection
+EndGlobal
