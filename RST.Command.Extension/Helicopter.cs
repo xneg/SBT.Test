@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RST.Command.Extension
+﻿namespace RST.Command.Extension
 {
     public class Helicopter : IUnit
     {
+        public void Accept(IUnitVisitor visitor)
+        {
+            (visitor as IExtendedVisitor)?.Visit(this);
+        }
     }
 }

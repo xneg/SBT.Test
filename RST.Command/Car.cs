@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RST.Command
+﻿namespace RST.Command
 {
-    public class Car: IUnit
+    public class Car : IUnit
     {
+        public void Accept(IUnitVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 }

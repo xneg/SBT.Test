@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using RST.Command;
+using RST.Command.Extension;
 
 namespace SBT.Test
 {
@@ -33,18 +34,18 @@ namespace SBT.Test
         static void Main(string[] args)
         {
             // Команды для юнитов
-            var commands = new List<ICommand> {new FireCommand(), new MoveCommand()};
+            var commands = new List<ICommand> {new FireCommand(), new MoveCommand(new HelicopterMoveVisitor()), new RotateCommand()};
             // Юниты
-            var units = new List<IUnit> {new Car(), new Tank(), new Fence()};
+            var units = new List<IUnit> {new Car(), new Tank(), new Fence(), new Helicopter()};
 
             // //Вариант 1: для каждой команды вызвать её исполнение на каждом юните.
-            //foreach (var command in commands)
-            //{
-            //    foreach (var unit in units)
-            //    {
-            //        command.Execute(unit)
-            //    }
-            //}
+            foreach (var command in commands)
+            {
+                foreach (var unit in units)
+                {
+                    command.Execute(unit);
+                }
+            }
 
             //Вариант 2: для каждого юнита вызвать исполнение команды на нём.
             //foreach (var unit in units)
@@ -54,6 +55,8 @@ namespace SBT.Test
             //        unit.ExecuteCommand(command);
             //    }
             //}
+
+            Console.Read();
         }
     }
 }

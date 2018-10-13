@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RST.Command.Extension\RST.Command.Extension.csproj" />
     <ProjectReference Include="..\RST.Command\RST.Command.csproj" />
   </ItemGroup>
 
