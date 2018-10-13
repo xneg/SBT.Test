@@ -2,6 +2,8 @@
 {
     public class Fence : IUnit
     {
-
+        public void ExecuteCommand(ICommand command)
+        {
+        }
     }
 }

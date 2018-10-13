@@ -1,10 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace RST.Command
 {
-    public class Car: IUnit
+    public class Car : IUnit
     {
+        public void ExecuteCommand(ICommand command)
+        {
+            switch (command)
+            {
+                case MoveCommand move:
+                    Console.WriteLine("Car moved");
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
